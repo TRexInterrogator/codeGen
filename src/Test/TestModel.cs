@@ -7,6 +7,7 @@ namespace MyApp.Test {
         public string? str_nullable { get; set; }
         public DateTime my_date { get; set; }
         public DateTime? date_nullable { get; set; }
+        public Other other_class { get; set; } = new Other();
 
         public TestModel() { }
     }
