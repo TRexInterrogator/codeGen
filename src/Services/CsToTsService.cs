@@ -189,7 +189,7 @@ namespace CodeGen.Services {
                 file_lines.Add("");
                 file_lines.Add("\tpublic static CreateInstance(source: I" + class_name + "): " + class_name + " {");
                 file_lines.Add($"\t\tconst instance = new {class_name}();");
-                file_lines.Add("\t\tObject.assign(source, instance);");
+                file_lines.Add("\t\tObject.assign(instance, source);");
                 file_lines.Add("\t\treturn instance;");
                 file_lines.Add("\t}");
                 file_lines.Add("}");
